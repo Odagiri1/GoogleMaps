@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="jp.android.myapp.googlemaps.RegisterActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_text"
+        android:textSize="20dp"
+        android:text="店名"/>
+
+    <EditText
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_edit"
+        android:textSize="20dp"
+        android:layout_below="@+id/name_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addr_text"
+        android:textSize="20dp"
+        android:layout_below="@+id/name_edit"
+        android:text="住所"/>
+
+    <EditText
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/addr_edit"
+        android:textSize="20dp"
+        android:layout_below="@+id/addr_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tel_text"
+        android:textSize="20dp"
+        android:layout_below="@+id/addr_edit"
+        android:text="電話番号"/>
+
+    <EditText
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tel_edit"
+        android:textSize="20dp"
+        android:layout_below="@+id/tel_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kind_text"
+        android:textSize="20dp"
+        android:layout_below="@+id/tel_edit"
+        android:text="お店の種類"/>
+
+    <EditText
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/kind_edit"
+        android:textSize="20dp"
+        android:layout_below="@+id/kind_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date_text"
+        android:textSize="20dp"
+        android:layout_below="@+id/kind_edit"
+        android:text="登録日時"/>
+
+    <EditText
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/date_edit"
+        android:textSize="20dp"
+        android:layout_below="@+id/date_text"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="登録"
+        android:textSize="20dp"
+        android:id="@+id/regi_button"
+        android:layout_below="@+id/date_edit"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="キャンセル"
+        android:textSize="20dp"
+        android:id="@+id/cancel_button"
+        android:layout_below="@+id/regi_button"/>
+
+</RelativeLayout>
